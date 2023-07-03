@@ -21,11 +21,14 @@
 		width: 150px;
 	}
 
+	.left {
+		width: 150px;
+		float: none;
+	}
+
 	.footer {
 		width: 150px;
 	}
-	
-	.contents {
-		float: none;
-	}
 }
+	
+	
