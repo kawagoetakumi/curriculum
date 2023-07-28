@@ -76,9 +76,9 @@ public class Main {
 //      ヒント：asListメソッドはプリミティブ型のデータ型のみ扱えます。
 //	    <以下記述>
 			List<Integer> list = new ArrayList<>();
-			list.add(Calendar.YEAR);
-			list.add(Calendar.MONTH + 1);
-			list.add(Calendar.DATE);
+			list.add(arrayDate[0]);
+			list.add(arrayDate[1]);
+			list.add(arrayDate[2]);
 			
             
 //      問⑨ 上記で格納した要素を繰り返しで出力しましょう。
