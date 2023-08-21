@@ -21,7 +21,7 @@ public class EmployeeService {
  /** ドライバーのクラス名 */
  private static final String POSTGRES_DRIVER = "org.postgresql.Driver";
  /** ・JDBC接続先情報 */
- private static final String JDBC_CONNECTION = "jdbc:postgresql://localhost:5432/Employee_db/Employee_table";
+ private static final String JDBC_CONNECTION = "jdbc:postgresql://localhost:5432/Employee_db";
  /** ・ユーザー名 */
  private static final String USER = "postgres";
  /** ・パスワード */
@@ -31,11 +31,11 @@ public class EmployeeService {
  
   // 問② 入力された値で、UPDATEする文
  /** ・SQL UPDATE文 */
- private static final String SQL_UPDATE = "UPDATE Employee_table SET '?' = to_char(current_timestamp, 'yyyy/MM/dd HH24:MI:SS') WHERE id = '?'";
+ private static final String SQL_UPDATE = "UPDATE employee_table SET login_time = ? WHERE id = ?";
  
   // 問③ 入力されたIDとPassWordをキーにして、検索するSELECT文
  /** ・SQL SELECT文 */
- private static final String SQL_SELECT = "SELECT * FROM Employee_table WHERE id = '?' AND password = '?' ";
+ private static final String SQL_SELECT = "SELECT * FROM employee_table WHERE id = ? AND password = ?";
   
  EmployeeBean employeeDate = null;
   // 送信されたIDとPassWordを元に社員情報を検索するためのメソッド
