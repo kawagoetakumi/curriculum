@@ -8,7 +8,15 @@ import java.util.List;
 import java.util.Objects;
 
 // FIXME Step-5-1: 「EmployeeBean, ResponseBean, ConstMessage, ConstSQL, EmployeeDao, SC5Exception, Logger」をインポートしなさい。
-// [ここへ記述]
+import skillcheck.bean.EmployeeBean;
+import skillcheck.bean.ResponseBean;
+import skillcheck.constant.ConstMessage;
+import skillcheck.constant.ConstSQL;
+import skillcheck.dao.EmployeeDao;
+import skillcheck.exception.MVCException;
+import skillcheck.logger.Logger;
+
+
 
 /**
  * 社員情報管理サービス
@@ -178,7 +186,7 @@ public final class EmployeeManagementService extends BaseService implements Empl
                 // FIXME Step-5-4: pEmployeeBeanListの「1件目の要素のみ」から社員情報を取得しなさい。
                 // Tips1: ループ文を使用すること（正解は複数パターンあります）
                 // Tips2: 格納先はローカル変数のempとすること
-                // [ここへ記述]
+                
 
                 if (Objects.nonNull(emp)) {
                     Logger.log(new Throwable(), "pEmployeeBeanList[0].empId = " + emp.getEmpId());
