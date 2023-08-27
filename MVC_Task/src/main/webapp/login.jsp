@@ -21,13 +21,13 @@
             <!-- 1. エラー（message）表示時に使用するlabelタグの準備-->
             <!-- 2. class属性と、適用するスタイルの記述-->
             <!-- Tips: common.cssより赤色の文字色を定義しているスタイルを確認 -->
-            <!-- [<label for="error_label">パスワードに誤りがあります。:</label>
-            	  <input type="message" color="red" >] -->
+            <label for="error_label">パスワードに誤りがあります。:</label>
+            	  <input type="message" color="red" >
             <br>
         <% } %>
         <!-- FIXME Step-1-3: actionに送信先URIを記述しなさい。 -->
         <!-- Tips: 「/このプロジェクト/web.xmlに記述されているservlet-name」 -->
-        <form action="[employee]" method="post">
+        <form action="./employee" method="post">
             <div class="div-input-flex-area">
                 <div>
                     <label>社員番号　: </label>
