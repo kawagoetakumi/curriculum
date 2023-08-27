@@ -34,11 +34,11 @@
                 <td class="td-marker"></td>
                 <!-- FIXME Step-2-3: 社員情報一覧に表示する内容を式（Expression）を用いて表示しなさい。 -->
                 <!-- Tips: ループにより取得したリスト内の社員情報Beanを使用すること -->
-                <td id="empId"><%empId = "include.jsp"%></td>
-                <td title="<%=emp.getName()%>"><%empName = "emp.jsp"%></td>
-                <td title="<%=emp.getMail()%>"><%empMail= "emp.jsp"%></td>
-                <td title="<%=emp.getProgramingLanguage()%>"><%empProgramingLanguage = "emp.jsp"%></td>
-                <td title="<%=emp.getComment()%>"><%empComment = "emp.jsp"%></td>
+                <td id="empId"><%empId = "empId"%></td>
+                <td title="<%=emp.getName()%>"><%empName = "name"%></td>
+                <td title="<%=emp.getMail()%>"><%empMail= "mail"%></td>
+                <td title="<%=emp.getProgramingLanguage()%>"><%empProgramingLanguage = "programingLanguage"%></td>
+                <td title="<%=emp.getComment()%>"><%empComment = "comment"%></td>
                 <td>
                     <form action="/MVC_Task/employee" method="get">
                         <input type="hidden" name="sender" value="/employeeResult.jsp"></input>
