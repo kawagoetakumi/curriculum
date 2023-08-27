@@ -9,7 +9,6 @@ import java.util.Objects;
 
 import skillcheck.bean.ResponseBean;
 import skillcheck.constant.ConstMessage;
-import skillcheck.constant.ConstSQL;
 import skillcheck.exception.MVCException;
 import skillcheck.logger.Logger;
 
@@ -58,13 +57,13 @@ public abstract class BaseService {
             // Tips: ConstSQLより適切な定数を参照
 
             // FIXME Step-5-2: postgresqlのドライバー名
-            Class.forName("[ここへ記述]");
+            Class.forName("[org.postgresql.Driver]");
 
             // FIXME Step-5-2: DBへ接続するための初期設定（引数すべてに記述すること）
             this.connection = DriverManager.getConnection(
-                    "",
-                    "",
-                    "");
+                    "JDBC_CONECTION",
+                    "JDBC_USER",
+                    "JDBC_PASS");
 
             // オートコミットOFF
             this.connection.setAutoCommit(false);
