@@ -26,7 +26,9 @@ public final class EmployeeBean {
     
     private String _cleateDate;
     
-    private String _updateDateString;
+    private String _updateDate;
+    
+    private String _name;
 
     /**
      * コンストラクタ: パラメーターなし
@@ -76,7 +78,7 @@ public final class EmployeeBean {
      * @param comment <pre>コメント</pre>
      * @param deleteFlg <pre>削除フラグ</pre>
      */
-    public EmployeeBean(String empId, String password, String name, String mail, String programingLanguage, String comment, String deleteFlg) {
+    public EmployeeBean(String empId, String password, String name, String mail, String programingLanguage, String comment, String deleteFlg , String cleateDate, String updateDate) {
         this._empId = empId;
         this._password = password;
         this._name = name;
@@ -177,7 +179,13 @@ public final class EmployeeBean {
         return _updateDate;
     }
 
-
+    public void setName(String name) {
+        this._name = name;
+    }
+    
+    public String getName() {
+        return _name;
+    }
 
 }
 
