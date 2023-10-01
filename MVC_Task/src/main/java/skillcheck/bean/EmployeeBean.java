@@ -90,7 +90,15 @@ public final class EmployeeBean {
         this._updateDate = updateDate;
     }
 
-    /**
+//    public EmployeeBean(String string, String string2, String string3, String string4, String string5, String string6) {
+//		// TODO 自動生成されたコンストラクター・スタブ
+//	}
+    	
+	public EmployeeBean(String empId, String passsword, String name, String mail, String programingLanguage, String comment) {
+		// TODO 自動生成されたコンストラクター・スタブ
+	}
+
+	/**
      * @param empId <pre>セットするStringクラスの社員番号</pre>
      */
     public void setEmpId(String empId) {
